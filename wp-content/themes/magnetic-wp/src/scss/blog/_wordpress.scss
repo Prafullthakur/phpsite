@@ -1,0 +1,62 @@
+.archive,
+.search {
+  h1.page-title {
+    margin-bottom: 1.5em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+}
+
+.edit-link {
+  display: block;
+  padding: 1em 0;
+
+  // temporary, to hide edit link when designing theme
+  //display: none;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+/**
+
+ WordPress alignment classes
+
+ */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1em;
+}
+.aligncenter {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+// legacy iframe embed
+// WP unit test
+iframe {
+  max-width: 100%;
+}
+
+// sticky post class
+.sticky {
+  margin-bottom: 2em;
+  padding: 1.5em 2em;
+  background-color: $super-light;
+
+  .entry-footer {
+    margin-bottom: 1em !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+  }
+}

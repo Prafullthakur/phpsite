@@ -1,0 +1,60 @@
+/*
+  Links with a button style
+  see base/forms for form buttons
+*/
+a.btn,
+a.btn-outline,
+a.btn-alt {
+  display: inline-block;
+  padding: .6em .9em;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .03em;
+  border-radius: $btn-border-radius;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+a.btn {
+  color: $btn-txt-color;
+  background-color: $btn-bg-color;
+  border: solid .2rem $btn-bg-color;
+  .fa {
+    color: rgba($btn-txt-color,.6);
+  }
+  &:hover,
+  &:focus {
+    color: $btn-txt-color;
+    background-color: lighten($btn-bg-color, 5%);
+    border-color: lighten($btn-bg-color, 5%);
+    .fa {
+      color: rgba($btn-txt-color,.7);
+    }
+  }
+}
+a.btn-outline {
+  color: $btn-outline-txt-color;
+  border: solid .2rem $btn-outline-border-color;
+  .fa {
+    color: rgba($btn-outline-txt-color,.6);
+  }
+  &:hover,
+  &:focus {
+    color: lighten($btn-outline-txt-color, 5%);
+    border-color: lighten($btn-outline-border-color, 5%);
+    .fa {
+      color: rgba($btn-outline-txt-color,.7);
+    }
+  }
+}
+a.btn.alt,
+a.btn-alt {
+  @include btn-color-override($btn-alt-txt-color, $btn-alt-bg-color);
+}
+a.btn.wide {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}

@@ -1,0 +1,80 @@
+.entry-meta,
+.entry-footer {
+  a {
+    font-weight: bold;
+  }
+}
+// meta links, comment links
+.cat-links,
+.tags-links,
+.comments-link,
+.entry-meta,
+.entry-footer,
+.comment-author,
+.comment-metadata,
+.comment-reply-link {
+  font-size: 1.4rem;
+  color: $copy-color;
+  a {
+    text-decoration: none;
+    color: $meta-link-color;
+  }
+  a:hover,
+  a:focus {
+    color: $meta-link-hover;
+  }
+}
+// category, tag links
+.cat-links,
+.tags-links {
+  display: block;
+  margin-top: 1em;
+  a {
+    display: inline-block;
+    margin-right: .25em;
+    margin-bottom: .5em;
+    padding: .5em 1em;
+    font-size: 1.1rem;
+    font-weight: normal;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: $cat-link;
+    background-color: $cat-bg;
+  }
+  a:hover,
+  a:focus {
+    color: $cat-link-hover;
+    background-color: $cat-bg-hover;
+  }
+}
+.tags-links {
+  a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: none;
+    color: $tag-link;
+    background-color: $tag-bg;
+    &:hover,
+    &:focus {
+      color: $tag-link-hover;
+      background-color: $tag-bg-hover;
+    }
+  }
+}
+// link to comments in post meta
+.comments-link {
+  display: inline-block;
+  margin-left: .5em;
+  a::before {
+    display: inline-block;
+    padding-right: .25em;
+    content: "\f075";
+    font-family: "Font Awesome 5 Free";
+    font-weight: normal;
+    color: $meta-link-hover;
+  }
+  a:hover,
+  a:focus {
+    color: $meta-link-hover;
+  }
+}

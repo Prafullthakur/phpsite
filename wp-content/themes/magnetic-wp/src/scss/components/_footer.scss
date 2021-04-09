@@ -1,0 +1,44 @@
+.footer-widgets {
+  margin-top: 1em;
+  padding: 2em 0;
+  color: $footer-widgets-txt-color;
+  background-color: $footer-widgets-bg-color;
+  a {
+    font-weight: bold;
+    text-decoration: $text-decoration-footer-widgets;
+    color: $footer-widgets-link-color;
+  }
+  a:hover,
+  a:focus {
+    color: $footer-widgets-link-hover;
+  }
+  a.btn {
+    background-color: $footer-widgets-btn-color;
+    border-color: $footer-widgets-btn-color;
+    &:hover,
+    &:focus {
+      background-color: $footer-widgets-btn-hover;
+      border-color: $footer-widgets-btn-hover;
+    }
+  }
+}
+.footer-widgets h2.widget-title {
+  color: $footer-widgets-txt-color;
+}
+.site-footer {
+  padding-top: 1.6em;
+  padding-bottom: 1em;
+  color: $footer-txt-color;
+  background-color: $footer-bg-color;
+  p {
+    font-size: 1.3rem;
+  }
+  a {
+    text-decoration: $text-decoration-footer;
+    color: $footer-link-color;
+  }
+  a:hover,
+  a:focus {
+    color: $footer-link-hover;
+  }
+}

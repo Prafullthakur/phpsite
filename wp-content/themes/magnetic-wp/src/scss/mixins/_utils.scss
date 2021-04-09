@@ -1,0 +1,33 @@
+@mixin clearfix {
+  clear: both;
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+.clearfix {
+  @include clearfix;
+}
+
+@mixin img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-fluid,
+.img-responsive {
+  @include img-responsive;
+}
+
+// Use selectively and with caution:
+// http://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
+// https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
+@mixin font-smoothing {
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

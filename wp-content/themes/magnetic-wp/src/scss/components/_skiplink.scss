@@ -1,0 +1,30 @@
+.skiplink {
+  @include sr-only;
+  @include sr-only-focusable;
+  &:active,
+  &:focus {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 9999;
+    padding: .2em;
+    font-weight: 600;
+    color: $link-color;
+    background-color: $skiplink-bg;
+  }
+}
+// move skiplink down if admin bar is visible
+@media screen and (max-width: 782px){
+  body.admin-bar {
+    .skiplink {
+      top: 46px;
+    }
+  }
+}
+@media screen and (min-width: 783px){
+  body.admin-bar {
+    .skiplink {
+      top: 32px;
+    }
+  }
+}

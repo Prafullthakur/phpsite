@@ -1,0 +1,58 @@
+// limit to index/archive pages
+.blog,
+.archive,
+.search
+{
+  .navigation {
+    text-align: center;
+  }
+  .nav-previous a,
+  .nav-next a,
+  a.page-numbers
+  {
+    display: inline-block;
+    padding: .6em .9em;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .03em;
+    color: $pagination-color;
+    background-color: $pagination-bg-color;
+    border: $pagination-btn-brdr;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $pagination-hover-color;
+      background-color: $pagination-bg-hover-color;
+      border-color: $pagination-bg-hover-color;
+    }
+  }
+  .page-numbers.current,
+  .page-numbers.dots {
+    display: inline-block;
+    padding: .6em .9em;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .03em;
+    color: $pagination-color;
+  }
+  .page-numbers.current {
+    background-color: $pagination-current-bg-color;
+    border: solid .2rem $pagination-current-bg-color;
+  }
+  .page-numbers.next::after {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.3rem;
+    margin-left: .25em;
+  }
+  .page-numbers.prev::before {
+    content: "\f104";
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.3rem;
+    margin-right: .25em;
+  }
+}
